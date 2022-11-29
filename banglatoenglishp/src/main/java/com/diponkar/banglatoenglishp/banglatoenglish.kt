@@ -58,13 +58,17 @@ fun String.englishWordChangeToBanglaWord(): String {
   hash["Y"] = "y"
   hash["Z"] = "z"
 
-  hash["য়"] = "y"
+  hash["য়"] = "oy"
   hash["?"] = "?"
   hash["—"] = "—"
+  hash["-"] = "-"
   hash["–"] = "–"
   hash["\n"] = " "
   hash["\""] = " "
+  hash["/"] = "/"
   hash["."] = "."
+  hash["+"] = "+"
+  hash["*"] = "*"
   hash["০"] = 0
   hash["১"] = 1
   hash["২"] = 2
@@ -77,6 +81,7 @@ fun String.englishWordChangeToBanglaWord(): String {
   hash["৯"] = 9
 
   hash[""] = ""
+  hash["."] = "."
   hash[","] = ","
   hash["।"] = "."
   hash["।"] = "."
@@ -153,7 +158,7 @@ fun String.englishWordChangeToBanglaWord(): String {
   hash["হ"] = "h"
   hash["ড়"] = "R"
   hash["ঢ়"] = "R"
-  hash["য়"] = "y"
+  hash["য়"] = "oy"
   hash["ং"] = "ng"
   hash["ঃ"] = ""
   hash["্য"] = "z"
@@ -169,10 +174,14 @@ fun String.englishWordChangeToBanglaWord(): String {
 
   var banglaDate = ""
   this.forEach {
-    try {//it'়' 2492
-
+    try {
       val digit = it.toString()
-      banglaDate += hash[digit]
+      if (hash[digit]==null){
+        banglaDate +=""
+      }else{
+        banglaDate += hash[digit]
+      }
+
     } catch (e: Exception) {
       banglaDate += it
     }
