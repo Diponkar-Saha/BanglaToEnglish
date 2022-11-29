@@ -10,13 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-      var t=(
-        "Coming dফঘব্বহ  নফজ্জ বন গ্যতু৬তজ was screened at the programme.").englishWordChangeToBanglaWord()
+      val t=("জয় বাংলা বাংলাদেশ").englishWordChangeToBanglaWord()
 
-      Toast.makeText(this, ""+t, Toast.LENGTH_SHORT).show()
-
-
-
+      println(t)
 
     }
 }

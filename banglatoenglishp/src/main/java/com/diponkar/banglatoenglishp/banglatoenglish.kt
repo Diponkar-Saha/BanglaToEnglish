@@ -172,20 +172,20 @@ fun String.englishWordChangeToBanglaWord(): String {
   hash[" "] = " "
 
 
-  var banglaDate = ""
+  var convertedData = ""
   this.forEach {
     try {
-      val digit = it.toString()
-      if (hash[digit]==null){
-        banglaDate +=""
+      val data = it.toString()
+      if (hash[data]==null){
+        convertedData +=""
       }else{
-        banglaDate += hash[digit]
+        convertedData += hash[data]
       }
 
     } catch (e: Exception) {
-      banglaDate += it
+      convertedData += it
     }
   }
-  return banglaDate
+  return convertedData
 
 }
