@@ -15,25 +15,25 @@ Usage
 
 java: 
 
-englishWordChangeToBanglaWord("১৯/০২/২০২০");
+>englishWordChangeToBanglaWord("১৯/০২/২০২০");
 
 Output:
-19/02/2020
+>19/02/2020
 
 
 kotlin:
 
-("জয় বাংলা").englishWordChangeToBanglaWord()
+>("জয় বাংলা").englishWordChangeToBanglaWord()
 
 Output:
 
-joy bangla
+>joy bangla
 
 ///////////////////
 
-("জয় বাংলা Joy Bangladesh").englishWordChangeToBanglaWord()
+>("জয় বাংলা Joy Bangladesh").englishWordChangeToBanglaWord()
 
 Output:
 
-joy bangla Joy Bangladesh
+>joy bangla Joy Bangladesh
 
